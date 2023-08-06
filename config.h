@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "ProggyCleanTT:pixelsize=14:antialias=true:autohint=true";
 static char *font2[] = { "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 2;
 
@@ -113,28 +113,33 @@ float alphaUnfocus;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-	"#ebdbb2",
+
+	/* 8 normal colors */
+	[0] = "#494d4a", /* grey */
+	[1] = "#60da81", /* sea green */
+	[2] = "#6b786d", /* murky stone   */
+	[3] = "#3c4f40", /* muck  */
+	[4] = "#546e5a", /* rot    */
+	[5] = "#689f74", /* jade */
+	[6] = "#aeb4af", /* stone */
+	[7] = "#a4e3b0", /* light sea green  */
+
+	/* 8 bright colors */
+	[8]  = "#afb3be", /* soulless */
+	[9]  = "#dc8f44", /* dull orange     */
+	[10] = "#6babad", /* medical blue   */
+	[11] = "#acacac", /* flat stone  */
+	[12] = "#c3f904", /* yellow green    */
+	[13] = "#1efa00", /* neon green */
+	[14] = "#8bf202", /* lime    */
+  	[15] = "#719aef", /* sea blue   */
+
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#add8e6", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
-	"#282828", /* 258 -> bg */
-	"#ebdbb2", /* 259 -> fg */
+	"#282d29", /* 258 -> bg */
+	"#bffbca", /* 259 -> fg */
 };
 
 
