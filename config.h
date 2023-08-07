@@ -114,25 +114,25 @@ float alphaUnfocus;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 
-	/* 8 normal colors */
-	[0] = "#5c645e", /* black   */
-	[1] = "#60da81", /* red     */
-	[2] = "#6b786d", /* green   */
-	[3] = "#3c4f40", /* yellow  */
-	[4] = "#546e5a", /* blue    */
-	[5] = "#689f74", /* magenta */
-	[6] = "#aeb4af", /* cyan    */
-	[7] = "#a4e3b0", /* white   */
+	 /* 8 normal colors */
+	[0] = "#0f1310", /* black   */
+	[1] = "#a94531", /* red     */
+	[2] = "#16843b", /* green   */
+	[3] = "#e3c545", /* yellow  */
+	[4] = "#719aef", /* blue    */
+	[5] = "#ad3f82", /* magenta */
+	[6] = "#3b92b4", /* cyan    */
+	[7] = "#f4e8e8", /* white   */
 
 	/* 8 bright colors */
 	[8]  = "#afb3be", /* black   */
 	[9]  = "#dc8f44", /* red     */
-	[10] = "#6babad", /* green   */
-	[11] = "#acacac", /* yellow  */
-	[12] = "#c3f904", /* blue    */
-	[13] = "#1efa00", /* magenta */
+	[10] = "#1efa00", /* green   */
+	[11] = "#c3f904", /* yellow  */
+	[12] = "#6babad", /* blue    */
+	[13] = "#dca1cb", /* magenta */
 	[14] = "#00cc99", /* cyan    */
-	[15] = "#719aef", /* white   */
+	[15] = "#a8ffb8", /* white   */
 
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
